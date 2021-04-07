@@ -3,28 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <script src="lesson_4.js"></script>
     <title>ДЗ к 4 уроку</title>
 </head>
 
 <body>
-    <script>
-        function digitNumber(num) {
-            if (!Number.isInteger || num < 0 || num > 999) {
-                console.log("Введите число от 0 до 999!");
-                return {};
-            }
-
-            return {
-                firstDigit: num % 10,
-                secondDigit: Math.floor(num / 10) % 10,
-                thirdDigit: Math.floor(num / 100)
-            };
-        }
-
-        let num = prompt("Введите число от 0 до 999");
-
-        console.log(digitNumber(num));
-    </script>
 
 </body>
 

@@ -40,6 +40,12 @@ const basket = {
             price_product: 100,
             quantity: 32
         }
-    ]
+    ],
 
-}
+    countBasketPrice() {
+        return this.products.reduce((totalPrice, productItem) => totalPrice + productItem.price_product * productItem.quantity, 0);
+    }
+
+};
+
+console.log(basket.countBasketPrice());
